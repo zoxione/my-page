@@ -71,14 +71,31 @@ function updateBlocks() {
         } else {
             clearInterval(timer);
             console.log("STOP");
+
+            const footer = document.createElement('div'),
+                resume = document.createElement('div'),
+                skills = document.createElement('div'),
+                experience = document.createElement('div');
+            
+            resume.innerHTML = `Resume`;
+            resume.classList.add('text-center');
+            resume.classList.add('text-4xl');
+
+            skills.innerHTML = `none`;
+
+            experience.innerHTML = `none`;
+
+            footer.appendChild(resume);
+            footer.appendChild(skills);
+            footer.appendChild(experience);
+
+            footer.classList.add('bg-white');
+            footer.classList.add('text-2xl');
+            footer.classList.add('border-t-4');
+            footer.classList.add('border-red-600');
+            main.after(footer);
         }
     }, 10)
-}
-
-function updateBackground() {
-    // body.style.backgroundImage = "url('img/bg.jpg')";
-
-    // title.style.color = 'red';
 }
 
 btn.addEventListener('click', () => {
@@ -86,11 +103,12 @@ btn.addEventListener('click', () => {
 
     updateBlocks();
 
-
-
-    updateBackground();
-
-    
 });
 
-
+body.addEventListener('mousemove', (e) => {
+    w = document.documentElement.offsetWidth,
+    h = document.documentElement.offsetHeight;
+    let posX = Math.round(e.clientX / w * -100)
+    let posY = Math.round(e.clientY / h * -100)
+    body.style.backgroundPosition = posX + 'px ' + posY + 'px';
+});
