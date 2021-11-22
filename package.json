@@ -1,6 +1,6 @@
 {
   "name": "my-portfolio",
-  "homepage": "https://zoxione.github.io/",
+  "homepage": "https://zoxione.github.io/my-page",
   "version": "1.0.0",
   "private": true,
   "dependencies": {
@@ -16,8 +16,8 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
-    "predeploy": "yarn run build",
-    "deploy": "gh-pages -b master -d build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "craco start",
     "build": "craco build",
     "test": "craco test",
