@@ -3,9 +3,6 @@ import React from "react";
 //-mt-5
 //<h1 className="flex items-center justify-center my-16 h-20 tracking-wide font-semibold text-4xl text-white bg-gradient-to-r from-header to-border uppercase">{props.title}</h1>
 class Header extends React.Component {
-    constructor(props) {
-        super(props);
-    }
 
     render() {
         return (

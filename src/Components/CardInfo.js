@@ -1,6 +1,6 @@
 import React from "react";
 
-import { FaGithub, FaTwitter, FaDiscord, FaChevronDown, FaChevronUp } from 'react-icons/fa';
+import { FaGithub, FaTwitter, FaChevronDown, FaChevronUp } from 'react-icons/fa';
 import { motion, AnimatePresence } from "framer-motion"
 
 class CardInfo extends React.Component {
@@ -33,10 +33,10 @@ class CardInfo extends React.Component {
                     </div>
                     <div className="flex justify-center items-center flex-row lg:flex-col space-x-4 lg:space-x-0 lg:space-y-4">
                         <div>
-                            <a href="https://github.com/zoxione" target="_blank"><FaGithub className="w-8 h-8 text-text2 hover:text-text1" /></a>
+                            <a href="https://github.com/zoxione" rel="noreferrer" target="_blank"><FaGithub className="w-8 h-8 text-text2 hover:text-text1" /></a>
                         </div>
                         <div>
-                            <a href="https://twitter.com/ZOXIONE" target="_blank"><FaTwitter className="w-8 h-8 text-text2 hover:text-text1" /></a>
+                            <a href="https://twitter.com/ZOXIONE" rel="noreferrer" target="_blank"><FaTwitter className="w-8 h-8 text-text2 hover:text-text1" /></a>
                         </div>
                     </div>
                 </div>

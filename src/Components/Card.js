@@ -1,12 +1,8 @@
 import React from "react";
 
-import { motion, AnimatePresence } from "framer-motion"
+import { motion } from "framer-motion"
 
 class Card extends React.Component {
-    constructor(props) {
-        super(props);
-    }
-
     render() {
         return (
             <div class={`${this.props.wrapperClassName}`}>

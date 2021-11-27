@@ -1,12 +1,12 @@
 import React from "react";
 
 import CardInfo from "./Components/CardInfo";
-import Card from "./Components/Card";
-import Header from "./Components/Header";
-import Progress from "./Components/Progress";
+//import Card from "./Components/Card";
+//import Header from "./Components/Header";
+//import Progress from "./Components/Progress";
 
-import { motion, AnimatePresence } from "framer-motion"
-import { SiCplusplus, SiCsharp, SiJavascript, SiPython, SiKotlin } from "react-icons/si";
+//import { motion, AnimatePresence } from "framer-motion"
+//import { SiCplusplus, SiCsharp, SiJavascript, SiPython, SiKotlin } from "react-icons/si";
 
 class App extends React.Component {
   render() {
