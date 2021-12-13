@@ -10,10 +10,11 @@ module.exports = {
       colors: {
         'main1': '#232931',
         'main2': '#393E46',
-        'text1': '#4ECCA3',
+        'text1': '#FFC045',
         'text2': '#EEEEEE',
-        'second1': '#4ECCA3',
+        'second1': '#FFC045',
         'second2': '#232931',
+        'second3': '#FFB740',
       },
       boxShadow: {
         sm: '0 1px 2px 0 rgba(0, 0, 0, 0.05)',
