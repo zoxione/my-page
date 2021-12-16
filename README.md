@@ -1,10 +1,6 @@
-# zoxione
-
-2021
+# zoxione website
 
 ## Github Pages
-
-Check this:
 
 ### `https://zoxione.github.io/my-page`
 
