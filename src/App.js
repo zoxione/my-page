@@ -12,7 +12,7 @@ function App() {
     return (
         <>
             <div className="my-20 md:my-36">
-                <CardInfo className="w-3/6 mx-auto shadow-md" />
+                <CardInfo className="w-4/6 sm:w-3/6 mx-auto shadow-md" />
                 
                 <Header title="skills" />
 

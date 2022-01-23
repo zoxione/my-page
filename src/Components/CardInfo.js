@@ -23,7 +23,10 @@ function CardInfo(props) {
                     <img class="h-32 w-32 sm:h-40 sm:w-40 md:h-48 md:w-48 rounded-full" src={AVATAR} alt={"avatar"}/> 
                 </motion.div>
                 <div>
-                    <div className="text-xl md:text-2xl font-bold text-text1 mb-1">Bair Otkhonov</div>
+                    <div className="flex items-center flex-row mb-1 space-x-2">
+                        <p className="text-xl md:text-2xl font-bold text-text1">Bair Otkhonov</p>
+                        <span className="bg-text1 rounded-full px-2 text-sm xl:block hidden hover:bg-second3">zoxione</span>
+                    </div>
                     <p className="text-text2 text-sm md:text-base font-medium">UI/UX designer and Front-End Developer.</p>
                 </div>
                 <div className="flex justify-center items-center flex-row lg:flex-col space-x-4 lg:space-x-0 lg:space-y-4">
