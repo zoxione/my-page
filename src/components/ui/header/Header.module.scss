@@ -1,0 +1,7 @@
+.header_wrapper {
+  @apply h-[60px] flex flex-row justify-center items-center
+}
+
+.header_content {
+  @apply flex flex-row justify-center items-center text-xl font-bold text-center
+}
