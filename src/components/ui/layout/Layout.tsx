@@ -8,7 +8,7 @@ import Slide from "../slide/Slide";
 const Layout: FC<PropsWithChildren> = ({ children }) => {
   return (
     <>
-      <div className={styles.layout}>
+      <div className={`${styles.layout} bg-gray-50 dark:bg-slate-900 dark:text-white`}>
         <Header />
         <div className={styles.main}>
           {children}
