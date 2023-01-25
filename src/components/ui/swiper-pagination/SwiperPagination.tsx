@@ -10,8 +10,8 @@ const SwiperPagination: FC<PropsWithChildren> = ({ children }) => {
   const swiper = useSwiper();
 
   return (
-    <div className={styles.header_wrapper}>
-      <div className={styles.header_content}>
+    <div className={styles.header__wrapper}>
+      <div className={styles.header__content}>
         <Button onClick={() => swiper.slidePrev()}>
           <BsCaretLeftFill />
         </Button>

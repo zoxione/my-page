@@ -1,11 +1,69 @@
-.button {
-  @apply flex flex-row items-center justify-center rounded-md px-4 py-2 bg-violet-700 text-white;
+// Default button
+%button {
+  @apply flex flex-row items-center justify-center rounded-md px-4 py-2;
+
+  &:hover {}
+
+  &:active {
+    @apply scale-95 duration-300;
+  }
+
+  &:disabled {
+    @apply cursor-not-allowed;
+  }
 }
 
-.button:hover {
-  @apply bg-violet-600;
+.button__filled {
+  @extend %button;
+
+  @apply bg-primary-light text-on-primary-light;
+
+  &:hover {}
+
+  &:active {}
+
+  &:disabled {}
 }
 
-.button:active {
-  @apply bg-violet-700 scale-95 duration-300;
+:global(.dark) .button__filled {
+  @apply bg-primary-dark text-on-primary-dark;
+}
+
+.button__light {
+  @extend %button;
+
+  @apply bg-primary-light bg-opacity-20 text-primary-light;
+
+  &:hover {}
+
+  &:active {}
+
+  &:disabled {}
+}
+
+:global(.dark) .button__light {
+  @apply bg-primary-dark bg-opacity-20 text-primary-dark;
+}
+
+
+.button__outline {
+  @extend %button;
+
+  @apply bg-transparent border-2 border-primary-light text-primary-light;
+
+  &:hover {
+    @apply bg-primary-light text-on-primary-light;
+  }
+
+  &:active {}
+
+  &:disabled {}
+}
+
+:global(.dark) .button__outline {
+  @apply border-primary-dark text-primary-dark;
+
+  &:hover {
+    @apply bg-primary-dark text-on-primary-dark;
+  }
 }

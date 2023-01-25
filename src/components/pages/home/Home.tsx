@@ -27,13 +27,13 @@ const Home: FC = () => {
             I'm a Frontend Developer
             <div className="mt-[24px] grid grid-cols-2 gap-4">
               <a href="https://github.com/zoxione" target="_blank">
-                <Button className="w-full">
+                <Button variant="outline" className="w-full">
                   <FaGithub className="mr-2" size={18} />
                   <span>Github</span>
                 </Button>
               </a>
               <a href="https://t.me/zoxione" target="_blank">
-                <Button className="w-full">
+                <Button variant="outline" className="w-full">
                   <FaTelegram className="mr-2" size={18} />
                   <span>Telegram</span>
                 </Button>
@@ -42,13 +42,13 @@ const Home: FC = () => {
           </Slide>
         </SwiperSlide>
         <SwiperSlide>
-          <Slide title="Мои навыки">
+          <Slide title="My skills">
             HTML • CSS • JavaScript • React • TypeScript • Next.js • Redux • Git • Figma
           </Slide>
         </SwiperSlide>
         <SwiperSlide>
-          <Slide title="Мои проекты">
-            Пока здеся ничего нет
+          <Slide title="My projects">
+            Nothing to show yet
           </Slide>
         </SwiperSlide>
       </Swiper>

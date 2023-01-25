@@ -11,24 +11,32 @@ interface IProps {
 
 
 const Button: FC<IProps> = (props: IProps) => {
+  let classNames = "";
 
-  if (props.variant === "default") {
+  if (props.variant === "filled") {
     return (
-      <button className={styles.button_default + " " + props.className} onClick={props.onClick}>
+      <button className={`${styles.button__filled} ${props.className}`} onClick={props.onClick}>
+        {props.children}
+      </button>
+    )
+  }
+  else if (props.variant === "light") {
+    return (
+      <button className={`${styles.button__light} ${props.className}`} onClick={props.onClick}>
         {props.children}
       </button>
     )
   }
   else if (props.variant === "outline") {
     return (
-      <button className={styles.button_outline + " " + props.className} onClick={props.onClick}>
+      <button className={`${styles.button__outline} ${props.className}`} onClick={props.onClick}>
         {props.children}
       </button>
     )
   }
   else {
     return (
-      <button className={styles.button + " " + props.className} onClick={props.onClick}>
+      <button className={`${styles.button__filled} ${props.className}`} onClick={props.onClick}>
         {props.children}
       </button>
     )

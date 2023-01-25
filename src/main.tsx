@@ -4,10 +4,17 @@ import { createBrowserRouter, Route, Router, RouterProvider, Routes } from 'reac
 import Home from './components/pages/home/Home'
 import './index.scss'
 
+import "@fontsource/ubuntu";
+import ComponentsPreview from './components/pages/components-preview/ComponentsPreview'
+
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Home />,
+  },
+  {
+    path: "/components-preview",
+    element: <ComponentsPreview />,
   },
   // {
   //   path: "contacts/:contactId",

@@ -1,6 +1,7 @@
 import { FC, PropsWithChildren, useEffect, useState } from "react";
 import styles from "./Header.module.scss";
 import { BsCaretRightFill, BsCaretLeftFill } from 'react-icons/bs';
+import Button from "../button/Button";
 
 const Header: FC<PropsWithChildren> = ({ children }) => {
   const [theme, setTheme] = useState(null as string | null);
@@ -46,20 +47,20 @@ const Header: FC<PropsWithChildren> = ({ children }) => {
   }
 
   return (
-    <div className={`${styles.header_wrapper} bg-gray-100 dark:bg-slate-800`}>
-      <div className={`${styles.header_content}`}>
+    <div className={`${styles.header_wrapper} bg-surface-light dark:bg-surface-dark`}>
+      <div className={`${styles.header_content} text-on-surface-light dark:text-on-surface-dark`}>
         <img src="peepoHey.webp" alt="logo" />
-        <span className="pl-2 font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-600">
+        <a className="pl-2 font-bold" href={'/'}>
           zoxione's portfolio
-        </span>
+        </a>
       </div>
 
-      <button
-        className={styles.theme_switch}
+      <Button
+        variant="light"
         onClick={handleThemeSwitch}
       >
         {theme === "dark" ? '🌙' : '☀️'}
-      </button>
+      </Button>
     </div>
   )
 }
