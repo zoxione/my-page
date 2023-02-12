@@ -1,69 +1,46 @@
 // Default button
 %button {
-  @apply flex flex-row items-center justify-center rounded-md px-4 py-2;
+	@apply flex flex-row items-center justify-center rounded-md px-4 py-2 active:scale-95 active:duration-300 disabled:cursor-not-allowed disabled:opacity-50 disabled:scale-100;
 
-  &:hover {}
-
-  &:active {
-    @apply scale-95 duration-300;
-  }
-
-  &:disabled {
-    @apply cursor-not-allowed;
-  }
+	@apply bg-primary-light text-on-primary-light;
+}
+:global(.dark) %button {
+	@apply bg-primary-dark text-on-primary-dark;
 }
 
+// Button filled
 .button__filled {
-  @extend %button;
-
-  @apply bg-primary-light text-on-primary-light;
-
-  &:hover {}
-
-  &:active {}
-
-  &:disabled {}
+	@extend %button;
 }
-
 :global(.dark) .button__filled {
-  @apply bg-primary-dark text-on-primary-dark;
 }
 
+// Button light
 .button__light {
-  @extend %button;
+	@extend %button;
 
-  @apply bg-primary-light bg-opacity-20 text-primary-light;
-
-  &:hover {}
-
-  &:active {}
-
-  &:disabled {}
+	@apply bg-opacity-20 text-primary-light;
 }
-
 :global(.dark) .button__light {
-  @apply bg-primary-dark bg-opacity-20 text-primary-dark;
+	@apply bg-opacity-20 text-primary-dark;
 }
 
-
+// Button outline
 .button__outline {
-  @extend %button;
+	@extend %button;
 
-  @apply bg-transparent border-2 border-primary-light text-primary-light;
-
-  &:hover {
-    @apply bg-primary-light text-on-primary-light;
-  }
-
-  &:active {}
-
-  &:disabled {}
+	@apply bg-transparent border-2 border-primary-light text-primary-light hover:bg-primary-light hover:text-on-primary-light;
+}
+:global(.dark) .button__outline {
+	@apply bg-transparent border-2 border-primary-dark text-primary-dark hover:bg-primary-dark hover:text-on-primary-dark;
 }
 
-:global(.dark) .button__outline {
-  @apply border-primary-dark text-primary-dark;
+// Button icon
+.button__icon {
+	@extend %button;
 
-  &:hover {
-    @apply bg-primary-dark text-on-primary-dark;
-  }
+	@apply bg-transparent text-primary-light active:bg-primary-light;
+}
+:global(.dark) .button__icon {
+	@apply bg-transparent text-primary-dark active:bg-primary-dark;
 }

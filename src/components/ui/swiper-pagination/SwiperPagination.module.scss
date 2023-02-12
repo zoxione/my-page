@@ -1,11 +1,11 @@
 .header__wrapper {
-  @apply absolute bottom-0 w-full z-50 mb-6 flex flex-row items-center justify-center;
+	@apply fixed left-0 bottom-0 w-full z-50 mb-6 flex flex-row items-center justify-center;
 }
 
 .header__content {
-  @apply flex flex-row items-center justify-center gap-6 p-2 rounded-2xl bg-primary-light backdrop-blur-sm bg-opacity-20;
+	@apply flex flex-row items-center justify-center gap-6 p-2 rounded-2xl bg-primary-light backdrop-blur-sm bg-opacity-50;
 }
 
 :global(.dark) .header__content {
-  @apply bg-primary-dark backdrop-blur-sm bg-opacity-20;
+	@apply bg-primary-dark backdrop-blur-sm bg-opacity-50;
 }

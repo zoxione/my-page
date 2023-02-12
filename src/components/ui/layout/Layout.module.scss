@@ -1,12 +1,11 @@
 @use '../../../variables' as variables;
 
-
 .layout {
-  // background-color: map.get($theme-colors, "primary");
-  // background-color: variables.$black;
-  @apply min-h-screen;
+	// background-color: map.get($theme-colors, "primary");
+	// background-color: variables.$black;
+	@apply min-h-screen;
 }
 
 .main {
-  @apply min-h-[calc(100vh_-_60px)] flex items-center justify-center mx-[24px];
+	@apply min-h-[calc(100vh_-_60px)] flex items-center justify-center mx-[24px];
 }
